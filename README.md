@@ -3,8 +3,7 @@ We are trying to make a flutter app, which has example of every flutter animatio
 
 ### How to contribute to this project
 
-
-![Screenshot 2023-10-02 232321](https://github.com/dev1abhi/Flutter-Animations/assets/132396257/8729bffd-cc8e-41ef-b842-9b51188dab50)
+<img src="https://github.com/dev1abhi/Flutter-Animations/assets/132396257/67c6ab3c-9b63-4f60-bbef-345e153a0e09" width="20%" height="20%">
 
 - Make sure to read the [contributing guidelines](CONTRIBUTING.md) before contributing.
 - `Fork` this repository.
