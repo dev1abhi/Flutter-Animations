@@ -1,4 +1,14 @@
 # Flutter-Animations
+# HacktoberFest23
+
+<p align="center">
+    <a href="https://hacktoberfest.com/" target="_blank">
+    	<img src="https://miro.medium.com/v2/resize:fit:1400/0*McOGR_vW3LivYNor.png" width="800px" height="400px">
+    </a>
+</p>
+
+
+
 We are trying to make a flutter app, which has example of every flutter animation available.
 
 ### How to contribute to this project
