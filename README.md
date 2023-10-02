@@ -1,5 +1,4 @@
 # Flutter-Animations
-# HacktoberFest23
 
 <p align="center">
     <a href="https://hacktoberfest.com/" target="_blank">
