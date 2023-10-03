@@ -13,7 +13,7 @@
 ## How to contribute to this project
 
 <p align="center">
-  <img src="https://github.com/dev1abhi/Flutter-Animations/assets/132396257/67c6ab3c-9b63-4f60-bbef-345e153a0e09" width="20%" height="20%">
+  <img src="https://github.com/dev1abhi/Flutter-Animations/assets/132396257/67c6ab3c-9b63-4f60-bbef-345e153a0e09" width="30%" height="30%">
 </p>
 
 
