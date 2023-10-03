@@ -20,7 +20,7 @@
 - Make sure to read the [contributing guidelines](CONTRIBUTING.md) before contributing.
 - `Fork` this repository.
 - `Clone` your fork on local machine.
-- Switch to the `master` branch.
+- Switch to the `main` branch.
 - Make a new `branch`, preferably with the feature name.
 - Checkout to the new branch with `git checkout <new_branch_name>`
 - Do the desired changes and `commit` them with `git commit -m '<a nice commit message here>'`.
@@ -28,6 +28,10 @@
 - Make a `Pull Request` to the master branch in the original repository, i.e. this one.
 
 Note: Make sure you are always up to date with sync and pull upstream. Sync and pull before you start and before you push your work.
+
+# Introduction to Animations in Flutter
+
+There are multiple types of animations which can be implemented in Flutter apps. Deciding which animation is the best for your app depends upon a lot of factors, like whether the animationns is code-based or drawing-based, the life cycle of the animations, etc. To get an idea for the best-suited animations for your app, watch this video from the official Flutter YouTube channel: https://www.youtube.com/watch?v=GXIJJkq_H8g&list=PLjxrf2q8roU2v6UqYlt_KPaXlnjbYySua
 
 ## Flutter Fade-In and Fade-Out Animation
 
