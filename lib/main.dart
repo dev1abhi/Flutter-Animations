@@ -4,6 +4,7 @@ import 'Colors/colors.dart';
 import 'Controllers/drawercontroller.dart';
 import 'Screens/fade_in_fade_out.dart';
 import 'package:get/get.dart';
+import 'Screens/SplashScreen.dart';
 
 void main() {
   Get.put<MyDrawerController>(MyDrawerController());
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         '/homepage':(context)=>  MyHomePage(),
       },
 
-      home: MyHomePage()
+      home: SplashScreen()
     );
   }
 }
