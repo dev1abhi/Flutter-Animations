@@ -9,7 +9,7 @@
 
 
 ### We are trying to make a flutter app, which has example of every flutter animation available.
-### Please Star this repo ⭐ if you liked the idea. Thanks a lot.
+### Please `Star` this repo ⭐ if you liked the idea. Thanks a lot.
 
 # How to contribute to this project
 
