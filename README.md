@@ -97,3 +97,90 @@ Widget build(BuildContext context) {
   }
 ```
 4. **Customize the animation**: You can change the `Duration` value in seconds to speed up or slow down your animation. Along with that there are other properties like alignment, constraints, decoration, padding, margin, etc. which allow you to tinker your animations according gto your specific needs. For more info on AnimatedContainer, visit `https://api.flutter.dev/flutter/widgets/AnimatedContainer-class.html`.
+
+## Shimmer animations
+Shimmer animations in Flutter are a popular way to add subtle, eye-catching visual effects to your user interface. They simulate a shimmering or sparkling effect, often used to indicate that content is loading or to draw attention to specific elements in your app. Flutter provides a simple and effective way to implement shimmer animations using various packages, with one of the most widely used being the "shimmer" package.
+
+Here's a brief guide on how to create shimmer animations in Flutter:
+
+1. **Install the Shimmer Package**:
+
+   To get started, add the shimmer package to your Flutter project. Open your `pubspec.yaml` file and add the following dependency:
+
+   ```yaml
+   dependencies:
+     shimmer: ^0.6.0 // Use the latest version available
+   ```
+
+   Then, run `flutter pub get` in your terminal to install the package.
+
+2. **Import the Shimmer Widget**:
+
+   Import the shimmer package in your Dart file where you want to use the shimmer effect:
+
+   ```dart
+   import 'package:shimmer/shimmer.dart';
+   ```
+
+3. **Create a Shimmer Animation**:
+
+   You can wrap any widget with a `Shimmer` widget to apply the shimmer effect to it. For example, to create a shimmering loading indicator, you can wrap a `Container` with the `Shimmer` widget:
+
+   ```dart
+   Shimmer.fromColors(
+     baseColor: Colors.grey[300], // The color of the non-animated part
+     highlightColor: Colors.grey[100], // The color of the animated part
+     child: Container(
+       width: 200.0,
+       height: 20.0,
+       color: Colors.white, // The color of the container (optional)
+     ),
+   )
+   ```
+
+4. **Customize Shimmer Effect**:
+
+   You can customize the shimmer effect by adjusting the `baseColor` and `highlightColor` properties to match your app's design. Additionally, you can set the `direction`, `period`, and other properties to control the animation behavior.
+
+5. **Use Shimmer in Widgets**:
+
+   You can use the `Shimmer` widget in various places, such as loading indicators, placeholders for dynamic content, or even to make your app's UI elements stand out.
+
+Here's a complete example of a Flutter widget that uses a shimmer animation as a loading indicator:
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:shimmer/shimmer.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Shimmer Animation Example'),
+        ),
+        body: Center(
+          child: Shimmer.fromColors(
+            baseColor: Colors.grey[300],
+            highlightColor: Colors.grey[100],
+            child: Container(
+              width: 200.0,
+              height: 20.0,
+              color: Colors.white,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
+
+With this code, you'll see a shimmering loading indicator in the center of the screen.
+
+Shimmer animations can greatly enhance the user experience in your Flutter app by providing engaging visual feedback during loading or emphasizing certain UI elements. You can use them creatively to make your app more attractive and user-friendly.
