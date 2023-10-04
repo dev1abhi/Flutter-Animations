@@ -1,4 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="16"
+        android:targetSdkVersion="28" />
+
     <application
         android:label="flutter_animations"
         android:name="${applicationName}"
@@ -29,5 +32,8 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
     </application>
+
+
 </manifest>

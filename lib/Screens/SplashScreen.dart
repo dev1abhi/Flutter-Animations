@@ -5,7 +5,7 @@ import 'package:lottie/lottie.dart';
 class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Future.delayed(const Duration(seconds: 5), () {
+    Future.delayed(const Duration(seconds: 2), () {
       // Navigate to the HomeScreen after 2 seconds
       Navigator.pushReplacement(
         context,
