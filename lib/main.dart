@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animations/Screens/homepage.dart';
+import 'package:flutter_animations/Text/tex_screen.dart';
 import 'Colors/colors.dart';
 import 'Controllers/drawercontroller.dart';
 import 'Screens/fade_in_fade_out.dart';
@@ -17,21 +18,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Animations',
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: backgroundColor,
-      ),
-      routes:
-      {
-        '/fade_in':(context) => const fade_in_fade_out(),
-        '/homepage':(context)=>  MyHomePage(),
-      },
-
-      home: SplashScreen()
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Animations',
+        theme: ThemeData.dark().copyWith(
+          scaffoldBackgroundColor: backgroundColor,
+        ),
+        routes: {
+          '/fade_in': (context) => const fade_in_fade_out(),
+          '/homepage': (context) => MyHomePage(),
+          '/text_animat': (context) => AnimatedTextWidget(),
+        },
+        home: SplashScreen());
   }
 }
-
-
-
