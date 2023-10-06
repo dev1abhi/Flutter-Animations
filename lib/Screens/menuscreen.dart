@@ -14,7 +14,8 @@ class MenuScreen extends GetView<MyDrawerController> {
   final List<String> menuItems = [
     'Guidelines',
     'Fade in/out',
-    'Text Animation'
+    'Text Animation',
+    'Water Drop Effect'
   ];
 
   @override
