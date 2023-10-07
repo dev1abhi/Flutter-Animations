@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/Colors/colors.dart';
+
+import 'package:flutter_animations/helpers/colors.dart';
 import 'package:get/get.dart';
-import '../Controllers/drawercontroller.dart';
+import '../controllers/drawercontroller.dart';
 
 
 class MainScreen extends GetView<MyDrawerController> {

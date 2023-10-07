@@ -1,9 +1,10 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/Colors/colors.dart';
+import 'package:flutter_animations/helpers/colors.dart';
+
 import 'package:get/get.dart';
-import '../Controllers/drawercontroller.dart';
+import '../controllers/drawercontroller.dart';
 
 class MenuScreen extends GetView<MyDrawerController> {
   final Function(int) onMenuItemClicked;

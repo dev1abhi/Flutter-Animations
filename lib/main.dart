@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/Screens/homepage.dart';
+import 'package:flutter_animations/helpers/colors.dart';
+import 'package:flutter_animations/screens/homepage.dart';
 import 'package:flutter_animations/Text/tex_screen.dart';
-import 'Colors/colors.dart';
-import 'Controllers/drawercontroller.dart';
-import 'Screens/fade_in_fade_out.dart';
+
+import 'controllers/drawercontroller.dart';
+import 'screens/fade_in_fade_out.dart';
 import 'package:get/get.dart';
-import 'Screens/SplashScreen.dart';
+import 'screens/SplashScreen.dart';
 
 void main() {
   Get.put<MyDrawerController>(MyDrawerController());

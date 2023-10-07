@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animations/helpers/colors.dart';
 import 'package:get/get.dart';
-import '../Controllers/drawercontroller.dart';
-import '../Colors/colors.dart';
+import '../controllers/drawercontroller.dart';
+
 
 class fade_in_fade_out extends StatefulWidget {
   const fade_in_fade_out({super.key});

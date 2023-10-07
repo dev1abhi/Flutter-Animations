@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/Colors/colors.dart';
+
 import 'package:flutter_animations/Text/move_udlr_screen.dart';
+import 'package:flutter_animations/helpers/colors.dart';
 import 'package:flutter_animations/widgets/customAppBar.dart';
 
 class AnimatedTextWidget extends StatefulWidget {
