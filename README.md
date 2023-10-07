@@ -14,8 +14,11 @@
 # How to contribute to this project
 
 <p align="center">
-  <img src="https://github.com/dev1abhi/Flutter-Animations/assets/132396257/67c6ab3c-9b63-4f60-bbef-345e153a0e09" width="30%" height="30%">
+  <img src="https://github.com/dev1abhi/Flutter-Animations/assets/132396257/f44c06b0-0b5f-483e-80bc-88ee274635b7" width="25%" height="15%" hspace="30">
+  <img src="https://github.com/dev1abhi/Flutter-Animations/assets/132396257/9f5715e5-391e-472c-8238-4082f0a99248" width="25%" height="15%">
 </p>
+
+
 
 
 - Make sure to read the [contributing guidelines](CONTRIBUTING.md) before contributing.
