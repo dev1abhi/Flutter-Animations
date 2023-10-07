@@ -7,9 +7,14 @@
 </p>
 
 
+<div align="center">
 
-### We are trying to make a flutter app, which has example of every flutter animation available.  
-### Please `Star` this repo ⭐ if you liked the idea. Thanks a lot.
+### <span style="font-size: larger;">We are trying to make a Flutter app, which has an example of every Flutter animation available.</span>
+### <span style="font-weight: bold; font-size: larger;">Please `Star` this repo ⭐ if you liked the idea. Thanks a lot.</span>
+
+</div>
+
+
 
 # How to contribute to this project
 
