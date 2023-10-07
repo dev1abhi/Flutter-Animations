@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Animations',
         theme: ThemeData.dark().copyWith(

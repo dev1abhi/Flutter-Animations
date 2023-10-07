@@ -1,11 +1,29 @@
 import 'package:flutter/material.dart';
 
+import '../Colors/colors.dart';
+import '../Controllers/drawercontroller.dart';
+
 class WaterDropEffect extends StatelessWidget {
   const WaterDropEffect({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: mainpagecolor,
+      appBar: AppBar(
+        backgroundColor: mainpagecolor,
+        title: Text('Water Drop Effect'),
+        leading: IconButton(
+          icon: Icon(Icons.menu), // You can use any icon you prefer
+          onPressed:() {
+            MyDrawerController.to.toggleDrawer();
+            MyDrawerController.to.update();
+          },
+          hoverColor: Colors.white,
+        ),
+        elevation: 0,
+      ),
+
       body: SafeArea(
         child: Column(
           children: [
