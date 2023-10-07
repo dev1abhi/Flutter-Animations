@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animations/helpers/colors.dart';
 
-import '../Colors/colors.dart';
-import '../Controllers/drawercontroller.dart';
+
+import '../controllers/drawercontroller.dart';
 
 class WaterDropEffect extends StatelessWidget {
   const WaterDropEffect({Key? key}) : super(key: key);
