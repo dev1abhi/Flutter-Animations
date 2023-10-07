@@ -18,7 +18,9 @@ class WaterDropEffect extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            const Spacer(),
+            const SizedBox(
+              height: 20,
+            ),
             // Custom Neumorphic Container
             Center(
               child: Container(
