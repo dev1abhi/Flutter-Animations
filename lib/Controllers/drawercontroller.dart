@@ -4,7 +4,6 @@ import 'package:flutter_animations/Screens/water_drop_effect.dart';
 import 'package:flutter_animations/Text/tex_screen.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:get/get.dart';
-import '../Screens/animation2.dart';
 import '../Screens/mainscreen.dart';
 
 class MyDrawerController extends GetxController {

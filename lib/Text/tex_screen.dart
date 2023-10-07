@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animations/Colors/colors.dart';
 import 'package:flutter_animations/Text/move_udlr_screen.dart';
+import 'package:flutter_animations/widgets/customAppBar.dart';
 
 class AnimatedTextWidget extends StatefulWidget {
   @override
@@ -14,8 +16,7 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
   @override
   void initState() {
     super.initState();
-    _controller =
-        AnimationController(vsync: this, duration: Duration(seconds: 6));
+    _controller = AnimationController(vsync: this, duration: Duration(seconds: 6));
     _animation = Tween<double>(begin: 0, end: 1).animate(_controller);
     _controller.repeat(reverse: true);
   }
@@ -23,9 +24,8 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Broken Text Animation'),
-      ),
+      backgroundColor: mainpagecolor,
+      appBar: CustomAppBar(title: "Text Animation"),
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -40,7 +40,7 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Fluter',
+                          'Flutter',
                           style: TextStyle(fontSize: 24),
                         ),
                         Row(
