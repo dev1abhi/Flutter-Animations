@@ -18,18 +18,18 @@ class _AnimatedTextWidgetState2 extends State<AnimatedTextWidget2>
   void initState() {
     super.initState();
     _controller =
-        AnimationController(vsync: this, duration: Duration(seconds: 2));
+        AnimationController(vsync: this, duration: const Duration(seconds: 2));
     if (widget.animationType == 'left') {
-      _animation = Tween<Offset>(begin: Offset(1, 0), end: Offset(0, 0))
+      _animation = Tween<Offset>(begin: const Offset(1, 0), end: const Offset(0, 0))
           .animate(_controller);
     } else if (widget.animationType == 'right') {
-      _animation = Tween<Offset>(begin: Offset(-1, 0), end: Offset(0, 0))
+      _animation = Tween<Offset>(begin: const Offset(-1, 0), end: const Offset(0, 0))
           .animate(_controller);
     } else if (widget.animationType == 'up') {
-      _animation = Tween<Offset>(begin: Offset(0, 1), end: Offset(0, 0))
+      _animation = Tween<Offset>(begin: const Offset(0, 1), end: const Offset(0, 0))
           .animate(_controller);
     } else if (widget.animationType == 'down') {
-      _animation = Tween<Offset>(begin: Offset(0, -1), end: Offset(0, 0))
+      _animation = Tween<Offset>(begin: const Offset(0, -1), end: const Offset(0, 0))
           .animate(_controller);
     }
     _controller.forward();
@@ -39,12 +39,12 @@ class _AnimatedTextWidgetState2 extends State<AnimatedTextWidget2>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Text Animation'),
+        title: const Text('Text Animation'),
       ),
       body: Center(
         child: SlideTransition(
           position: _animation,
-          child: Text(
+          child: const Text(
             'Flutter Animation',
             style: TextStyle(fontSize: 24),
           ),

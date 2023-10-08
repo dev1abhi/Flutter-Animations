@@ -18,6 +18,7 @@ class MenuScreen extends GetView<MyDrawerController> {
     'Text Animation',
     'Water Drop Effect',
     'Ripple Effect',
+    'bounce animation',
   ];
 
   @override
@@ -27,7 +28,7 @@ class MenuScreen extends GetView<MyDrawerController> {
         color: menupagecolor,
         child: Column(
           children: [
-            Text(
+            const Text(
               "Menu",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -35,7 +36,7 @@ class MenuScreen extends GetView<MyDrawerController> {
                 color: Colors.white,
               ),
             ),
-            SizedBox(height: 40),
+            const SizedBox(height: 40),
             Expanded(
               child: ListView.builder(
                 itemCount: menuItems.length,
@@ -43,7 +44,7 @@ class MenuScreen extends GetView<MyDrawerController> {
                   return ListTile(
                     title: Text(
                       menuItems[index],
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18,
                       ),
