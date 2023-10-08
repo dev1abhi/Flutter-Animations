@@ -23,9 +23,9 @@ class _fade_in_fade_out extends State<fade_in_fade_out> {
         backgroundColor: mainpagecolor,
         appBar: AppBar(
         backgroundColor: mainpagecolor,
-        title: Text('Fade in / Fade out demo'),
+        title: const Text('Fade in / Fade out demo'),
     leading: IconButton(
-    icon: Icon(Icons.menu), // You can use any icon you prefer
+    icon: const Icon(Icons.menu), // You can use any icon you prefer
     onPressed:() {
       MyDrawerController.to.toggleDrawer();
       MyDrawerController.to.update();

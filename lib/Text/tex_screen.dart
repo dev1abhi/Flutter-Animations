@@ -17,7 +17,7 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
   @override
   void initState() {
     super.initState();
-    _controller = AnimationController(vsync: this, duration: Duration(seconds: 6));
+    _controller = AnimationController(vsync: this, duration: const Duration(seconds: 6));
     _animation = Tween<double>(begin: 0, end: 1).animate(_controller);
     _controller.repeat(reverse: true);
   }
@@ -26,7 +26,7 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: mainpagecolor,
-      appBar: CustomAppBar(title: "Text Animation"),
+      appBar: const CustomAppBar(title: "Text Animation"),
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -40,7 +40,7 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           'Flutter',
                           style: TextStyle(fontSize: 24),
                         ),
@@ -55,8 +55,8 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
                                               AnimatedTextWidget2(
                                                   animationType: 'up')));
                                 },
-                                child: Text('UP')),
-                            SizedBox(
+                                child: const Text('UP')),
+                            const SizedBox(
                               width: 15,
                             ),
                             ElevatedButton(
@@ -68,7 +68,7 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
                                               AnimatedTextWidget2(
                                                   animationType: 'down')));
                                 },
-                                child: Text('Down')),
+                                child: const Text('Down')),
                           ],
                         ),
                         Row(
@@ -82,8 +82,8 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
                                               AnimatedTextWidget2(
                                                   animationType: 'right')));
                                 },
-                                child: Text('Right')),
-                            SizedBox(
+                                child: const Text('Right')),
+                            const SizedBox(
                               width: 15,
                             ),
                             ElevatedButton(
@@ -95,7 +95,7 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
                                               AnimatedTextWidget2(
                                                   animationType: 'left')));
                                 },
-                                child: Text('left')),
+                                child: const Text('left')),
                           ],
                         ),
                       ],
