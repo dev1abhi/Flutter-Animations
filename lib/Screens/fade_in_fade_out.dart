@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animations/helpers/colors.dart';
-import 'package:get/get.dart';
+
 import '../controllers/drawercontroller.dart';
 
 
