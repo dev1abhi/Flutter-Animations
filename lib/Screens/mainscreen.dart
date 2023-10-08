@@ -13,9 +13,9 @@ class MainScreen extends GetView<MyDrawerController> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: mainpagecolor,
-        title: Text('Flutter Animations'),
+        title: const Text('Flutter Animations'),
         leading: IconButton(
-          icon: Icon(Icons.menu), // You can use any icon you prefer
+          icon: const Icon(Icons.menu), // You can use any icon you prefer
           onPressed: controller.toggleDrawer,
           hoverColor: Colors.white,
         ),
@@ -24,7 +24,7 @@ class MainScreen extends GetView<MyDrawerController> {
       ),
     body: Container(
       color: mainpagecolor,
-      child: SingleChildScrollView(
+      child: const SingleChildScrollView(
       padding: EdgeInsets.all(16.0),
       child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
