@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:flutter_animations/Screens/explicit_animation.dart';
 import 'package:flutter_animations/Screens/fade_in_fade_out.dart';
 import 'package:flutter_animations/Screens/water_drop_effect.dart';
 import 'package:flutter_animations/Screens/ripple_animation.dart';
@@ -22,6 +23,8 @@ class MyDrawerController extends GetxController {
   final mainScreen5 = const RipplesAnimation();
   final mainScreen6 = Bounce();
 
+  final mainScreen7 = ExplicitAnimations();
+
 
   // Getter to get the current main screen based on the selectedMenuItem
   Widget get currentMainScreen {
@@ -37,7 +40,10 @@ class MyDrawerController extends GetxController {
        case 4:
         return mainScreen5;
        case 5 : 
-        return  mainScreen6 ; 
+        return  mainScreen6 ;
+
+        case 6 : 
+        return  mainScreen7 ;  
       // Add more cases when you are adding new screen
       default:
         return mainScreen1; // Default to mainScreen1 if the selection is not recognized
