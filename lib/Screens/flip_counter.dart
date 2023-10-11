@@ -32,7 +32,7 @@ class _flipState extends State<flip> {
               icon: const Icon(Icons.refresh_rounded))
           ],
           backgroundColor: mainpagecolor,
-          title: const Text('bounce animation'),
+          title: const Text('flip  animation'),
 
 
           leading: IconButton(
