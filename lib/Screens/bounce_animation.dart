@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animations/Screens/homepage.dart';
 import 'package:flutter_animations/controllers/drawercontroller.dart';
 import 'package:flutter_animations/helpers/colors.dart';
-import 'package:get/get.dart';
+
 
 class Bounce extends StatefulWidget {
   const Bounce({super.key});

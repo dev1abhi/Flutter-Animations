@@ -19,7 +19,8 @@ class MenuScreen extends GetView<MyDrawerController> {
     'Water Drop Effect',
     'Ripple Effect',
     'Bounce Animation',
-    "Explicit Animation"
+    "Explicit Animation",
+    "FlipCounter Animation "
   ];
 
   @override
