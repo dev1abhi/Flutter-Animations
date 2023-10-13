@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_animations/Screens/fade_in_fade_out.dart';
+import 'package:flutter_animations/Screens/radial_hero_animation.dart';
 import 'package:flutter_animations/Screens/water_drop_effect.dart';
 import 'package:flutter_animations/Text/tex_screen.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
@@ -18,6 +19,7 @@ class MyDrawerController extends GetxController {
   final mainScreen2 = fade_in_fade_out();
   final mainScreen3 = AnimatedTextWidget();
   final mainScreen4 = WaterDropEffect();
+  final mainScreen5 = RadialExpansionDemo();
 
   // Getter to get the current main screen based on the selectedMenuItem
   Widget get currentMainScreen {
@@ -30,6 +32,8 @@ class MyDrawerController extends GetxController {
         return mainScreen3;
       case 3:
         return mainScreen4;
+      case 4:
+        return mainScreen5;
       // Add more cases when you are adding new screen
       default:
         return mainScreen1; // Default to mainScreen1 if the selection is not recognized
