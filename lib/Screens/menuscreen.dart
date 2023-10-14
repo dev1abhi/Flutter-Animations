@@ -21,6 +21,7 @@ class MenuScreen extends GetView<MyDrawerController> {
     'Bounce Animation',
     "Explicit Animation",
     "Animated Dialog"
+    "FlipCounter Animation "
   ];
 
   @override
