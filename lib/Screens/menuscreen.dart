@@ -20,6 +20,7 @@ class MenuScreen extends GetView<MyDrawerController> {
     'Ripple Effect',
     'Bounce Animation',
     "Explicit Animation",
+    "Animated Dialog"
     "FlipCounter Animation "
   ];
 
