@@ -7,6 +7,7 @@ import 'package:flutter_animations/Text/tex_screen.dart';
 import 'package:flutter_animations/screens/bounce_animation.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:get/get.dart';
+import '../Screens/animated_dialog.dart';
 import '../Screens/mainscreen.dart';
 
 class MyDrawerController extends GetxController {
@@ -22,8 +23,8 @@ class MyDrawerController extends GetxController {
   final mainScreen4 = const WaterDropEffect();
   final mainScreen5 = const RipplesAnimation();
   final mainScreen6 = Bounce();
-
   final mainScreen7 = ExplicitAnimations();
+  final mainScreen8 = AnimatedDialog();
 
 
   // Getter to get the current main screen based on the selectedMenuItem
@@ -37,14 +38,15 @@ class MyDrawerController extends GetxController {
         return mainScreen3;
       case 3:
         return mainScreen4;
-       case 4:
+      case 4:
         return mainScreen5;
-       case 5 : 
+      case 5 :
         return  mainScreen6 ;
-
-        case 6 : 
-        return  mainScreen7 ;  
-      // Add more cases when you are adding new screen
+      case 6 :
+        return  mainScreen7 ;
+      case 7 :
+        return  mainScreen8 ;
+    // Add more cases when you are adding new screen
       default:
         return mainScreen1; // Default to mainScreen1 if the selection is not recognized
     }
