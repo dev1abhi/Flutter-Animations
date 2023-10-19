@@ -10,7 +10,7 @@ class loadingAnimation extends StatefulWidget {
 }
 
 class _loadingAnimation extends State<loadingAnimation> {
-  bool _visible = true;
+  bool visible = true;
 
   @override
   Widget build(BuildContext context) {
