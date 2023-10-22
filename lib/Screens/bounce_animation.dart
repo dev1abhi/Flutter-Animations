@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/Screens/homepage.dart';
+
 import 'package:flutter_animations/controllers/drawercontroller.dart';
 import 'package:flutter_animations/helpers/colors.dart';
-import 'package:get/get.dart';
+
 
 class Bounce extends StatefulWidget {
   const Bounce({super.key});
@@ -28,7 +28,7 @@ class _BounceState extends State<Bounce> {
                 shouldRefresh = !shouldRefresh;
               });
           },
-              icon: Icon(Icons.refresh_rounded))
+              icon: const Icon(Icons.refresh_rounded))
           ],
           backgroundColor: mainpagecolor,
           title: const Text('bounce animation'),
@@ -49,11 +49,11 @@ class _BounceState extends State<Bounce> {
                 children: [
                   // bounceInOut
                   TweenAnimationBuilder(
-                    child: CircleAvatar(
+                    child: const CircleAvatar(
                       radius: 60,
                       backgroundColor: Colors.greenAccent,
                     ),
-                    duration: Duration(milliseconds: 6000),
+                    duration: const Duration(milliseconds: 6000),
                     curve: Curves.bounceInOut,
                     tween: Tween(begin: 1.0, end: 0.0),
                     builder: (context, value, child) {
@@ -67,17 +67,17 @@ class _BounceState extends State<Bounce> {
                       );
                     },
                   ),
-                  SizedBox(height: 20,),
+                  const SizedBox(height: 20,),
 
                   //bounceOut
 
 
                   TweenAnimationBuilder(
-                    child: CircleAvatar(
+                    child: const CircleAvatar(
                       radius: 60,
                       backgroundColor: Colors.redAccent,
                     ),
-                    duration: Duration(milliseconds: 6000),
+                    duration: const Duration(milliseconds: 6000),
                     curve: Curves.bounceOut,
                     tween: Tween(begin: 1.0, end: 0.0),
                     builder: (context, value, child) {
@@ -90,14 +90,14 @@ class _BounceState extends State<Bounce> {
                       );
                     },
                   ),
-                  SizedBox(height: 20,),
+                  const SizedBox(height: 20,),
 
                   TweenAnimationBuilder(
-                    child: CircleAvatar(
+                    child: const CircleAvatar(
                       radius: 60,
                       backgroundColor: Colors.yellowAccent,
                     ),
-                    duration: Duration(milliseconds: 6000),
+                    duration: const Duration(milliseconds: 6000),
                     curve: Curves.bounceIn,
                     tween: Tween(begin: 1.0, end: 0.0),
                     builder: (context, value, child) {
@@ -111,7 +111,7 @@ class _BounceState extends State<Bounce> {
                       );
                     },
                   ),
-                  SizedBox(height: 20,),
+                  const SizedBox(height: 20,),
 
                 ]
             ))

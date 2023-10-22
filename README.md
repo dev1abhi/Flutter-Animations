@@ -193,3 +193,22 @@ class MyApp extends StatelessWidget {
 With this code, you'll see a shimmering loading indicator in the center of the screen.
 
 Shimmer animations can greatly enhance the user experience in your Flutter app by providing engaging visual feedback during loading or emphasizing certain UI elements. You can use them creatively to make your app more attractive and user-friendly.
+
+
+# Flutter Loading Animation
+
+Welcome to the Flutter Loading Animation project, a demonstration of a loading animation with a radial progress indicator. This README provides an overview of the project, its features, and how to use it.
+
+## Introduction
+
+This Flutter application showcases a loading animation with a radial progress indicator. When you click the "Start" button, the animation begins, and the progress gradually increases to a specified value. The primary goal is to demonstrate how to create an interactive loading animation in Flutter.
+
+## Key Features
+
+- **Loading Animation:** This application features a loading animation with a radial progress indicator.
+
+- **Dynamic Configuration:** You can customize the progress value and color of the loading animation.
+
+- **Interactive Button:** There's an "Start" button that you can click to trigger the animation.
+
+
