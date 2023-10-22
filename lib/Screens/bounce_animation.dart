@@ -20,23 +20,18 @@ class _BounceState extends State<Bounce> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: mainpagecolor,
         appBar: AppBar(
           actions: [
             IconButton(onPressed: () {
-
               setState(() {
                 shouldRefresh = !shouldRefresh;
               });
-
-
           },
-
               icon: Icon(Icons.refresh_rounded))
           ],
           backgroundColor: mainpagecolor,
           title: const Text('bounce animation'),
-
-
           leading: IconButton(
             icon: const Icon(Icons.menu), // You can use any icon you prefer
             onPressed: () {
