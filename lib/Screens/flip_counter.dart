@@ -1,7 +1,9 @@
 import 'package:animated_flip_counter/animated_flip_counter.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/Controllers/drawercontroller.dart';
+
 import 'package:flutter_animations/helpers/colors.dart';
+
+import '../controllers/drawercontroller.dart';
 
 
 class  flip extends StatefulWidget {
@@ -12,23 +14,24 @@ class  flip extends StatefulWidget {
 class _flipState extends State<flip> {
    
   double _value = 0.0;
+  bool shouldRefresh = false;
 
   @override
   Widget build(BuildContext context) {
     
-     bool shouldRefresh = false;
+
     return Scaffold(
       appBar: AppBar(
           actions: [
             IconButton(onPressed: () {
-
               setState(() {
                 shouldRefresh = !shouldRefresh;
+                if (shouldRefresh) {
+                  _value = 0.0; // Reset the counter to 0
+                }
+
               });
-
-
           },
-
               icon: const Icon(Icons.refresh_rounded))
           ],
           backgroundColor: mainpagecolor,
@@ -40,12 +43,15 @@ class _flipState extends State<flip> {
             onPressed: () {
               MyDrawerController.to.toggleDrawer();
               MyDrawerController.to.update();
+
+
             },
             hoverColor: Colors.white,
           ),
           elevation: 0,
         ),
       body: Center(
+        key: Key(shouldRefresh.toString()),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
