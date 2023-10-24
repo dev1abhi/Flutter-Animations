@@ -23,6 +23,7 @@ class MenuScreen extends GetView<MyDrawerController> {
     "Animated Dialog",
     "FlipCounter Animation",
     "Loading Animation",
+    "Hero-Animation",
 
   ];
 

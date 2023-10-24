@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animations/helpers/colors.dart';
-
-
 import '../controllers/drawercontroller.dart';
 
 class WaterDropEffect extends StatelessWidget {
