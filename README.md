@@ -7,15 +7,23 @@
 </p>
 
 
+<div align="center">
 
-### We are trying to make a flutter app, which has example of every flutter animation available.
-### Please `Star` this repo ⭐ if you liked the idea. Thanks a lot.
+### <span style="font-size: larger;">We are trying to make a Flutter app, which has an example of every Flutter animation available.</span>
+### <span style="font-weight: bold; font-size: larger;">Please `Star` this repo ⭐ if you liked the idea. Thanks a lot.</span>
+
+</div>
+
+
 
 # How to contribute to this project
 
 <p align="center">
-  <img src="https://github.com/dev1abhi/Flutter-Animations/assets/132396257/67c6ab3c-9b63-4f60-bbef-345e153a0e09" width="30%" height="30%">
+  <img src="https://github.com/dev1abhi/Flutter-Animations/assets/132396257/f44c06b0-0b5f-483e-80bc-88ee274635b7" width="25%" height="15%" hspace="30">
+  <img src="https://github.com/dev1abhi/Flutter-Animations/assets/132396257/9f5715e5-391e-472c-8238-4082f0a99248" width="25%" height="15%">
 </p>
+
+
 
 
 - Make sure to read the [contributing guidelines](CONTRIBUTING.md) before contributing.
@@ -185,3 +193,22 @@ class MyApp extends StatelessWidget {
 With this code, you'll see a shimmering loading indicator in the center of the screen.
 
 Shimmer animations can greatly enhance the user experience in your Flutter app by providing engaging visual feedback during loading or emphasizing certain UI elements. You can use them creatively to make your app more attractive and user-friendly.
+
+
+# Flutter Loading Animation
+
+Welcome to the Flutter Loading Animation project, a demonstration of a loading animation with a radial progress indicator. This README provides an overview of the project, its features, and how to use it.
+
+## Introduction
+
+This Flutter application showcases a loading animation with a radial progress indicator. When you click the "Start" button, the animation begins, and the progress gradually increases to a specified value. The primary goal is to demonstrate how to create an interactive loading animation in Flutter.
+
+## Key Features
+
+- **Loading Animation:** This application features a loading animation with a radial progress indicator.
+
+- **Dynamic Configuration:** You can customize the progress value and color of the loading animation.
+
+- **Interactive Button:** There's an "Start" button that you can click to trigger the animation.
+
+

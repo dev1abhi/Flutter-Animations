@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/Colors/colors.dart';
-import 'package:get/get.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
-import '../Controllers/drawercontroller.dart';
+import 'package:get/get.dart';
+import 'package:flutter_animations/helpers/colors.dart';
+import '../controllers/drawercontroller.dart';
 import 'menuscreen.dart';
 
 class MyHomePage extends GetView<MyDrawerController> {
