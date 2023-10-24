@@ -5,13 +5,12 @@ Welcome to Flutter Animations! ✨⭐
 We appreciate your interest in contributing to our repository.   
 Our Project is to make an app which contains various animations available in flutter.
 
-## Getting Started
+## Getting Started:
 
 1. Fork this repository.
-
 2. Clone your forked repository to your local machine.
 
-## How to Contribute
+## How to Contribute:
 
 1. Create a new branch for adding your animation.
 2. Add your Implementation of animation under `lib/Screens/` <Your animation name>.
@@ -22,11 +21,11 @@ Our Project is to make an app which contains various animations available in flu
 7. If something is breaking down, raise a issue and pin me `#dev1abhi`.
 8. Make your changes and commit them with descriptive messages.
 
-## Submitting a Pull Request
+## Submitting a Pull Request:
 
 1. Push your changes to your forked repository.
 2. Open a pull request with a clear title and description.
 
-## Code Style
+## Code Style:
 
 Follow the coding style and guidelines of the project. Be consistent with existing code.
