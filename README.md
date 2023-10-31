@@ -213,3 +213,35 @@ This Flutter application showcases a loading animation with a radial progress in
 - **Interactive Button:** There's an "Start" button that you can click to trigger the animation.
 
 
+## Flutter Text Animation
+
+### Introduction
+Text Animations in flutter can be usually includes interpolation effects on a given text string. This can be put to good use for displaying text responses to the user. We can implement text animations in dart codes using `TweenAnimationBuilder` widget.
+
+### Using `TweenAnimationBuilder`
+
+1. **Import Dependencies**: Import the necessary Flutter libraries.
+
+2. **Create an `TweenAnimationBuilder` Widget**: Use the TweenAnimationBuilder widget as the child of the necessary parent widget. Specify the necessary properties like the `tween` property, to set the initial and final sizes of the text font, mention the duration of the effect under the `duration` property, and finally for the `builder` property, return the Text widget on which you want to apply the effect. Please note that having a child widget is not compulsory for the TweenAnimationBuilder class.
+
+3. **Trigger the Animation**: For triggering the animation, in the parameters for the `builder` property, change the `Object?` to the data type of the font size, and set the value of `fontSize` property in the Text widget to the corresponding parameter name of the object type.
+
+Here's the sample code of an example: 
+
+```dart
+Widget build(BuildContext context) {
+  return Scaffold(
+    body: Center(
+      child: TweenAnimationBuilder(
+        tween: Tween<double>(begin: 1.0,end: 30.0),
+        duration: Duration(seconds: 2),
+        builder: (Buildcontext context, double value, Widget? child) {
+          return Text('Text Animation Effect',style: TextStyle(fontWeight: FontWeight.bold,fontSize: value));
+        },
+      )
+    )
+  )
+}
+```
+
+4. **Customize the Animation**: You can customize the animation effects using the different available properties and making suitable changes in the widget which you are returning from the `TennAnimationBuilder` widget. To learn more about this widget you can explore the official dart docs at `https://api.flutter.dev/flutter/widgets/TweenAnimationBuilder-class.html`.
