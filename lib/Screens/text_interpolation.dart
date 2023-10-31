@@ -41,7 +41,7 @@ class _text_interpolation extends State<text_interpolation> {
             tween: Tween<double>(begin: 1.0, end: 30.0),
             duration: const Duration(seconds: 2),
             builder: (BuildContext context, double value, Widget? child) {
-              return Text('Text Animation',
+              return Text('Text Interpolation',
                   style:
                       TextStyle(fontWeight: FontWeight.bold, fontSize: value));
             },
