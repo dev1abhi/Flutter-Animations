@@ -24,7 +24,8 @@ class MenuScreen extends GetView<MyDrawerController> {
     "FlipCounter Animation",
     "Loading Animation",
     "Hero-Animation",
-    "Colorize Text Animation"
+    "Colorize Text Animation",
+    "Text Interpolation",
   ];
 
   @override
