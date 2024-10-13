@@ -1,10 +1,10 @@
 # Flutter-Animations
 
-<p align="center">
-    <a href="https://hacktoberfest.com/" target="_blank">
-    	<img src="https://miro.medium.com/v2/resize:fit:1400/0*McOGR_vW3LivYNor.png" width="800px" height="400px">
-    </a>
-</p>
+
+
+
+![DO-HFest-EmailBanner-600px-1-@3x](https://github.com/user-attachments/assets/7421fbee-86b6-46ff-9d7d-d914d3ecdef1)
+
 
 
 <div align="center">
