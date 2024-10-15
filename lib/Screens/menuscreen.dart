@@ -27,7 +27,10 @@ class MenuScreen extends GetView<MyDrawerController> {
     "Hero-Animation",
     "Colorize Text Animation",
     "Text Interpolation",
-    'Tween Animation'
+    'Tween Animation',
+    'Staggered Animation'
+   // 'Staggered'
+
   ];
 
   @override

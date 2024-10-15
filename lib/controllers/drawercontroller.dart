@@ -6,6 +6,7 @@ import 'package:flutter_animations/Screens/flip_counter.dart';
 import 'package:flutter_animations/Screens/hero_animation/master_page.dart';
 import 'package:flutter_animations/Screens/loading_animation.dart';
 import 'package:flutter_animations/Screens/ripple_animation.dart';
+import 'package:flutter_animations/Screens/staggered_animation.dart';
 import 'package:flutter_animations/Screens/text_interpolation.dart';
 import 'package:flutter_animations/Screens/tween_animation.dart';
 import 'package:flutter_animations/Screens/water_drop_effect.dart';
@@ -38,6 +39,7 @@ class MyDrawerController extends GetxController {
   final mainScreen12 = colorize_text();
   final mainScreen13 = text_interpolation();
   final mainScreen14= TweenAnimation();
+  final mainScreen15=const StaggeredAnimation();
 
   // Getter to get the current main screen based on the selectedMenuItem
   Widget get currentMainScreen {
@@ -70,6 +72,8 @@ class MyDrawerController extends GetxController {
         return mainScreen13;
       case 13:
         return mainScreen14;  
+      case 14:
+        return mainScreen15; 
 
       default:
         return mainScreen1; // Default to mainScreen1 if the selection is not recognized
