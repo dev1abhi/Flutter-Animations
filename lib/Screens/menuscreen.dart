@@ -15,6 +15,7 @@ class MenuScreen extends GetView<MyDrawerController> {
   final List<String> menuItems = [
     'Guidelines',
     'Fade in/out',
+    
     'Text Animation',
     'Water Drop Effect',
     'Ripple Effect',
@@ -26,6 +27,10 @@ class MenuScreen extends GetView<MyDrawerController> {
     "Hero-Animation",
     "Colorize Text Animation",
     "Text Interpolation",
+    'Tween Animation',
+    'Staggered Animation'
+   // 'Staggered'
+
   ];
 
   @override
