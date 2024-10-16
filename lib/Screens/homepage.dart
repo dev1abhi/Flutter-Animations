@@ -6,6 +6,8 @@ import '../controllers/drawercontroller.dart';
 import 'menuscreen.dart';
 
 class MyHomePage extends GetView<MyDrawerController> {
+  const MyHomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return GetBuilder<MyDrawerController>(

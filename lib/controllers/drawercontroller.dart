@@ -13,6 +13,7 @@ import 'package:flutter_animations/Screens/water_drop_effect.dart';
 import 'package:flutter_animations/Text/tex_screen.dart';
 import 'package:flutter_animations/screens/bounce_animation.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
+import 'package:flutter_animations/Screens/iiiidk.dart';
 import 'package:get/get.dart';
 
 import '../Screens/animated_dialog.dart';
@@ -27,20 +28,20 @@ class MyDrawerController extends GetxController {
   // Add your screens here
   final mainScreen1 = const MainScreen();
   final mainScreen2 = const fade_in_fade_out();
-  final mainScreen3 = AnimatedTextWidget();
+  final mainScreen3 = const AnimatedTextWidget();
   final mainScreen4 = const WaterDropEffect();
   final mainScreen5 = const RipplesAnimation();
-  final mainScreen6 = Bounce();
-  final mainScreen7 = ExplicitAnimations();
-  final mainScreen8 = AnimatedDialog();
-  final mainScreen9 = flip();
-  final mainScreen10 = loadingAnimation();
-  final mainScreen11 = HeroAnimation();
-  final mainScreen12 = colorize_text();
-  final mainScreen13 = text_interpolation();
-  final mainScreen14= TweenAnimation();
+  final mainScreen6 = const Bounce();
+  final mainScreen7 = const ExplicitAnimations();
+  final mainScreen8 = const AnimatedDialog();
+  final mainScreen9 = const flip();
+  final mainScreen10 = const loadingAnimation();
+  final mainScreen11 = const HeroAnimation();
+  final mainScreen12 = const colorize_text();
+  final mainScreen13 = const text_interpolation();
+  final mainScreen14= const TweenAnimation();
   final mainScreen15=const StaggeredAnimation();
-
+  final mainScreen16= const IdK();
   // Getter to get the current main screen based on the selectedMenuItem
   Widget get currentMainScreen {
     switch (selectedMenuItem.value) {
@@ -71,9 +72,11 @@ class MyDrawerController extends GetxController {
       case 12:
         return mainScreen13;
       case 13:
-        return mainScreen14;  
+        return mainScreen14;
       case 14:
-        return mainScreen15; 
+        return mainScreen15;
+      case 15:
+        return mainScreen16;
 
       default:
         return mainScreen1; // Default to mainScreen1 if the selection is not recognized

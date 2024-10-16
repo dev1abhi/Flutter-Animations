@@ -49,10 +49,6 @@ class _BounceState extends State<Bounce> {
                 children: [
                   // bounceInOut
                   TweenAnimationBuilder(
-                    child: const CircleAvatar(
-                      radius: 60,
-                      backgroundColor: Colors.greenAccent,
-                    ),
                     duration: const Duration(milliseconds: 6000),
                     curve: Curves.bounceInOut,
                     tween: Tween(begin: 1.0, end: 0.0),
@@ -66,6 +62,10 @@ class _BounceState extends State<Bounce> {
                         child: child,
                       );
                     },
+                    child: const CircleAvatar(
+                      radius: 60,
+                      backgroundColor: Colors.greenAccent,
+                    ),
                   ),
                   const SizedBox(height: 20,),
 
@@ -73,10 +73,6 @@ class _BounceState extends State<Bounce> {
 
 
                   TweenAnimationBuilder(
-                    child: const CircleAvatar(
-                      radius: 60,
-                      backgroundColor: Colors.redAccent,
-                    ),
                     duration: const Duration(milliseconds: 6000),
                     curve: Curves.bounceOut,
                     tween: Tween(begin: 1.0, end: 0.0),
@@ -89,14 +85,14 @@ class _BounceState extends State<Bounce> {
                         child: child,
                       );
                     },
+                    child: const CircleAvatar(
+                      radius: 60,
+                      backgroundColor: Colors.redAccent,
+                    ),
                   ),
                   const SizedBox(height: 20,),
 
                   TweenAnimationBuilder(
-                    child: const CircleAvatar(
-                      radius: 60,
-                      backgroundColor: Colors.yellowAccent,
-                    ),
                     duration: const Duration(milliseconds: 6000),
                     curve: Curves.bounceIn,
                     tween: Tween(begin: 1.0, end: 0.0),
@@ -110,6 +106,10 @@ class _BounceState extends State<Bounce> {
                         child: child,
                       );
                     },
+                    child: const CircleAvatar(
+                      radius: 60,
+                      backgroundColor: Colors.yellowAccent,
+                    ),
                   ),
                   const SizedBox(height: 20,),
 

@@ -26,9 +26,9 @@ class MyApp extends StatelessWidget {
         ),
         routes: {
           '/fade_in': (context) => const fade_in_fade_out(),
-          '/homepage': (context) => MyHomePage(),
-          '/text_animat': (context) => AnimatedTextWidget(),
+          '/homepage': (context) => const MyHomePage(),
+          '/text_animat': (context) => const AnimatedTextWidget(),
         },
-        home: SplashScreen());
+        home: const SplashScreen());
   }
 }
