@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AnimatedTextWidget2 extends StatefulWidget {
   final String animationType;
 
-  AnimatedTextWidget2({required this.animationType});
+  const AnimatedTextWidget2({super.key, required this.animationType});
 
   @override
   _AnimatedTextWidgetState2 createState() => _AnimatedTextWidgetState2();

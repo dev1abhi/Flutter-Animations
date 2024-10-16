@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_animations/helpers/colors.dart';
@@ -9,7 +8,7 @@ import '../controllers/drawercontroller.dart';
 class MenuScreen extends GetView<MyDrawerController> {
   final Function(int) onMenuItemClicked;
 
-  MenuScreen({required this.onMenuItemClicked});
+  MenuScreen({super.key, required this.onMenuItemClicked});
 
   // Menu items for illustration
   final List<String> menuItems = [

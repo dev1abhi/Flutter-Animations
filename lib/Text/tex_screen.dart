@@ -5,6 +5,8 @@ import 'package:flutter_animations/helpers/colors.dart';
 import 'package:flutter_animations/widgets/customAppBar.dart';
 
 class AnimatedTextWidget extends StatefulWidget {
+  const AnimatedTextWidget({super.key});
+
   @override
   _AnimatedTextWidgetState createState() => _AnimatedTextWidgetState();
 }
@@ -52,7 +54,7 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              AnimatedTextWidget2(
+                                              const AnimatedTextWidget2(
                                                   animationType: 'up')));
                                 },
                                 child: const Text('UP')),
@@ -65,7 +67,7 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              AnimatedTextWidget2(
+                                              const AnimatedTextWidget2(
                                                   animationType: 'down')));
                                 },
                                 child: const Text('Down')),
@@ -79,7 +81,7 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              AnimatedTextWidget2(
+                                               const AnimatedTextWidget2(
                                                   animationType: 'right')));
                                 },
                                 child: const Text('Right')),
@@ -92,7 +94,7 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              AnimatedTextWidget2(
+                                              const AnimatedTextWidget2(
                                                   animationType: 'left')));
                                 },
                                 child: const Text('left')),

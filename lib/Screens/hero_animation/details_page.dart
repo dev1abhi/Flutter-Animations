@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class DetailPage extends StatelessWidget {
   final int index;
 
-  const DetailPage({required this.index});
+  const DetailPage({super.key, required this.index});
 
   @override
   Widget build(BuildContext context) {

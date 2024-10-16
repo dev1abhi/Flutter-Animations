@@ -67,7 +67,7 @@ class _ExplicitAnimationsState extends State<ExplicitAnimations>
 
           },
 
-              icon: Icon(Icons.refresh_rounded))
+              icon: const Icon(Icons.refresh_rounded))
           ],
           backgroundColor: mainpagecolor,
           title: const Text('explicit animation'),

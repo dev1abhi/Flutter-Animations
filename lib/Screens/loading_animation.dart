@@ -29,7 +29,7 @@ class _loadingAnimation extends State<loadingAnimation> {
         ),
         elevation: 0,
       ),
-      body: Center(
+      body: const Center(
         child: RadialProgressAnimation(
           progress: 0.86,
           color: Colors.orange,

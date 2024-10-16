@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animations/Screens/hero_animation/details_page.dart';
 import 'package:flutter_animations/widgets/customAppBar.dart';
-import '../../controllers/drawercontroller.dart';
-import '../../helpers/colors.dart';
 
 class HeroAnimation extends StatelessWidget {
   const HeroAnimation({super.key});
@@ -11,7 +9,7 @@ class HeroAnimation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      appBar: CustomAppBar( title: 'Hero-animation',),
+      appBar: const CustomAppBar( title: 'Hero-animation',),
 
       body:  ListView.builder(itemBuilder: (context, index) {
         return ListTile(

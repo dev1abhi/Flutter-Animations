@@ -43,7 +43,7 @@ class _AnimatedDialogState extends State<AnimatedDialog> {
                     width: 300,
                     padding: const EdgeInsets.all(20),
                     color: Colors.white,
-                    child: Column(
+                    child: const Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Text('Hello!!'),
@@ -67,15 +67,15 @@ class _AnimatedDialogState extends State<AnimatedDialog> {
                     backgroundColor: Colors.cyan,
                     shape: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(16.0)),
-                    title: Text('Animated Dialog Example'),
-                    content: Text('Github: Imsurajr'),
+                    title: const Text('Animated Dialog Example'),
+                    content: const Text('Github: Imsurajr'),
                   ),
                 );
               },
-              transitionDuration: Duration(milliseconds: 300),
+              transitionDuration: const Duration(milliseconds: 300),
             );
           },
-          child: Text('Show Dialog'),
+          child: const Text('Show Dialog'),
         ),
       ),
     );

@@ -37,6 +37,8 @@ dependencies:
   lottie: ^2.6.0
   vector_math: ^2.1.4
 
+  flutter_zoom_drawer: any
+  get: any
 dev_dependencies:
   flutter_launcher_icons: "^0.13.1"
 
@@ -48,8 +50,7 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-  flutter_zoom_drawer: ^3.1.1
-  get: ^4.6.6
+  
 
 flutter_icons:
   android: "launcher_icon"

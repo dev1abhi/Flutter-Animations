@@ -11,9 +11,9 @@ class WaterDropEffect extends StatelessWidget {
       backgroundColor: mainpagecolor,
       appBar: AppBar(
         backgroundColor: mainpagecolor,
-        title: Text('Water Drop Effect'),
+        title: const Text('Water Drop Effect'),
         leading: IconButton(
-          icon: Icon(Icons.menu), // You can use any icon you prefer
+          icon: const Icon(Icons.menu), // You can use any icon you prefer
           onPressed:() {
             MyDrawerController.to.toggleDrawer();
             MyDrawerController.to.update();
@@ -117,7 +117,7 @@ class WaterDropEffect extends StatelessWidget {
                             BoxShadow(
                               color: Colors.white,
                               blurRadius: 5,
-                              offset: const Offset(5, 6),
+                              offset: Offset(5, 6),
                             ),
                           ],
                         ),
