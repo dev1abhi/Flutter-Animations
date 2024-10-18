@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animations/Text/Colourize.dart';
+import 'package:flutter_animations/Text/Scale_text.dart';
 import 'package:flutter_animations/Text/Text_Animations.dart';
+import 'package:flutter_animations/Text/Typewriter.dart';
 import 'package:flutter_animations/helpers/colors.dart';
 
 class AnimatedTextWidget2 extends StatefulWidget {
@@ -49,7 +52,7 @@ class _AnimatedTextWidgetState2 extends State<AnimatedTextWidget2>
   @override
   Widget build(BuildContext context) {
     // Handle special 'R' case by adding a button or logic here
-    if (widget.animationType == 'R') {
+    if (widget.animationType == 'Rotate') {
       Future.microtask(() {
         Navigator.pushReplacement(
           context,
@@ -57,6 +60,21 @@ class _AnimatedTextWidgetState2 extends State<AnimatedTextWidget2>
             builder: (context) => TextAnimations(),
           ),
         );
+      });
+    }
+    else if(widget.animationType=='Scale'){
+      Future.microtask((){
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>ScaleText(),),);
+      });
+    }
+    else if(widget.animationType=='colorize'){
+      Future.microtask((){
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Colourize()));
+      });
+    }
+    else if(widget.animationType=='writer'){
+      Future.microtask((){
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Typewriter()));
       });
     }
 
