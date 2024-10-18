@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_animations/Text/move_udlr_screen.dart';
 import 'package:flutter_animations/helpers/colors.dart';
 import 'package:flutter_animations/widgets/customAppBar.dart';
+import 'package:get/get.dart';
 
 class AnimatedTextWidget extends StatefulWidget {
   @override
@@ -17,7 +17,8 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
   @override
   void initState() {
     super.initState();
-    _controller = AnimationController(vsync: this, duration: const Duration(seconds: 6));
+    _controller =
+        AnimationController(vsync: this, duration: const Duration(seconds: 6));
     _animation = Tween<double>(begin: 0, end: 1).animate(_controller);
     _controller.repeat(reverse: true);
   }
@@ -44,60 +45,9 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
                           'Flutter',
                           style: TextStyle(fontSize: 24),
                         ),
-                        Row(
-                          children: [
-                            ElevatedButton(
-                                onPressed: () {
-                                  Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              AnimatedTextWidget2(
-                                                  animationType: 'up')));
-                                },
-                                child: const Text('UP')),
-                            const SizedBox(
-                              width: 15,
-                            ),
-                            ElevatedButton(
-                                onPressed: () {
-                                  Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              AnimatedTextWidget2(
-                                                  animationType: 'down')));
-                                },
-                                child: const Text('Down')),
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            ElevatedButton(
-                                onPressed: () {
-                                  Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              AnimatedTextWidget2(
-                                                  animationType: 'right')));
-                                },
-                                child: const Text('Right')),
-                            const SizedBox(
-                              width: 15,
-                            ),
-                            ElevatedButton(
-                                onPressed: () {
-                                  Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              AnimatedTextWidget2(
-                                                  animationType: 'left')));
-                                },
-                                child: const Text('left')),
-                          ],
-                        ),
+                        _buildButtonRow(context, 'UP', 'down'),
+                        _buildButtonRow(context, 'right', 'left'),
+                        _buildSingleButton(context, 'R', 'Rotate'),
                       ],
                     ),
                   ),
@@ -107,6 +57,66 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
           ],
         ),
       ),
+    );
+  }
+
+  Row _buildButtonRow(BuildContext context, String type1, String type2) {
+    return Row(
+      children: [
+        Builder(
+          builder: (context) {
+            return ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        AnimatedTextWidget2(animationType: type1),
+                  ),
+                );
+              },
+              child: Text(type1),
+            );
+          },
+        ),
+        const SizedBox(width: 15),
+        Builder(
+          builder: (context) {
+            return ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        AnimatedTextWidget2(animationType: type2),
+                  ),
+                );
+              },
+              child: Text(type2),
+            );
+          },
+        ),
+      ],
+    );
+  }
+
+  Widget _buildSingleButton(
+      BuildContext context, String animationType, String label) {
+    return Builder(
+      builder: (context) {
+        return ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) =>
+                    AnimatedTextWidget2(animationType: animationType),
+              ),
+            );
+          },
+          child: Text(label),
+        );
+      },
     );
   }
 
