@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animations/Text/Text_Animations.dart';
+import 'package:flutter_animations/helpers/colors.dart';
 
 class AnimatedTextWidget2 extends StatefulWidget {
   final String animationType;
-
   AnimatedTextWidget2({required this.animationType});
-
   @override
   _AnimatedTextWidgetState2 createState() => _AnimatedTextWidgetState2();
 }
@@ -17,29 +17,54 @@ class _AnimatedTextWidgetState2 extends State<AnimatedTextWidget2>
   @override
   void initState() {
     super.initState();
+
     _controller =
         AnimationController(vsync: this, duration: const Duration(seconds: 2));
-    if (widget.animationType == 'left') {
-      _animation = Tween<Offset>(begin: const Offset(1, 0), end: const Offset(0, 0))
-          .animate(_controller);
-    } else if (widget.animationType == 'right') {
-      _animation = Tween<Offset>(begin: const Offset(-1, 0), end: const Offset(0, 0))
-          .animate(_controller);
-    } else if (widget.animationType == 'up') {
-      _animation = Tween<Offset>(begin: const Offset(0, 1), end: const Offset(0, 0))
-          .animate(_controller);
-    } else if (widget.animationType == 'down') {
-      _animation = Tween<Offset>(begin: const Offset(0, -1), end: const Offset(0, 0))
-          .animate(_controller);
-    }
+
+    // Setup animations based on the type
+    _animation = _getAnimation(widget.animationType);
     _controller.forward();
+  }
+
+  Animation<Offset> _getAnimation(String animationType) {
+    switch (animationType) {
+      case 'left':
+        return Tween<Offset>(begin: const Offset(1, 0), end: const Offset(0, 0))
+            .animate(_controller);
+      case 'right':
+        return Tween<Offset>(begin: const Offset(-1, 0), end: const Offset(0, 0))
+            .animate(_controller);
+      case 'up':
+        return Tween<Offset>(begin: const Offset(0, 1), end: const Offset(0, 0))
+            .animate(_controller);
+      case 'down':
+        return Tween<Offset>(begin: const Offset(0, -1), end: const Offset(0, 0))
+            .animate(_controller);
+      default:
+        return Tween<Offset>(begin: const Offset(0, 0), end: const Offset(0, 0))
+            .animate(_controller);
+    }
   }
 
   @override
   Widget build(BuildContext context) {
+    // Handle special 'R' case by adding a button or logic here
+    if (widget.animationType == 'R') {
+      Future.microtask(() {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => TextAnimations(),
+          ),
+        );
+      });
+    }
+
     return Scaffold(
+      backgroundColor: mainpagecolor,
       appBar: AppBar(
         title: const Text('Text Animation'),
+        backgroundColor: mainpagecolor,
       ),
       body: Center(
         child: SlideTransition(
