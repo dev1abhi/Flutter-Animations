@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animations/Text/Colourize.dart';
 import 'package:flutter_animations/Text/Scale_text.dart';
 import 'package:flutter_animations/Text/Text_Animations.dart';
+import 'package:flutter_animations/Text/Typewriter.dart';
 import 'package:flutter_animations/helpers/colors.dart';
 
 class AnimatedTextWidget2 extends StatefulWidget {
@@ -69,6 +70,11 @@ class _AnimatedTextWidgetState2 extends State<AnimatedTextWidget2>
     else if(widget.animationType=='colorize'){
       Future.microtask((){
         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Colourize()));
+      });
+    }
+    else if(widget.animationType=='writer'){
+      Future.microtask((){
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Typewriter()));
       });
     }
 
