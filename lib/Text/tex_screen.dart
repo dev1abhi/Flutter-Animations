@@ -47,7 +47,8 @@ class _AnimatedTextWidgetState extends State<AnimatedTextWidget>
                         ),
                         _buildButtonRow(context, 'UP', 'down'),
                         _buildButtonRow(context, 'right', 'left'),
-                        _buildSingleButton(context, 'R', 'Rotate'),
+                        _buildButtonRow(context, 'Rotate', 'Scale'),
+                        _buildSingleButton(context, 'colorize','Colorize' )
                       ],
                     ),
                   ),
